@@ -28,23 +28,26 @@ addTodo: function(todoText){
     todoText = todoText,
     completed = false
   });
+  this.displayTodos();
 },
 
 //change
 changeTodo: function(position, todoText){
   this.todos[position].todoText = todoText;
+  this.displayTodos();
 },
 
 //delete
 deleteTodo: function(position){
   this.todos.splice(position, 1);
+  this.displayTodos();
 
 },
 //toggle complete
 toggleComplete: function(position){
   var todo = this.todos[position];
   todo.completed = !todo.completed;
-
+  this.displayTodos();
 },
 
 //toggle all
@@ -65,5 +68,6 @@ toggleAll: function(){
     this.todos[i].completed =true;}
           }
         }
+    this.displayTodos();
       }
       },
