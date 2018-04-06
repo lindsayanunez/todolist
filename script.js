@@ -5,6 +5,19 @@ todos:[],
 
 //display
 displayTodos: function(){
+  if(this.todos.length === 0){
+    console.log('Your Todo List is empty. Add a todo!');
+  }else{
+      console.log('My Todos:');
+    for(var i=0; i < this.todos.length; i++){
+      if(this.todos[i].completed === true){
+        console.log('(X)',this.todos.todoText);
+      }
+      else{
+        console.log('()',this.todos.todoText);
+      }
+    }
+  }
 
 },
 
