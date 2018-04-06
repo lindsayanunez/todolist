@@ -36,7 +36,21 @@ toggleComplete: function(position){
 
 //toggle all
 toggleAll: function(){
+  //check all of them
+      var totalTodos = this.todos.length;
+      var completedTodos = 0;
 
-},
-
-}
+  for(var i=0; i < totalTodos; i++){
+        if(this.todos[i].completed === true){
+          completedTodos++;}
+        }
+  if(totalTodos === completedTodos){
+    for(var i=0; i<totalTodos; i++){
+    this.todos[i].completed = false;}}
+  else{
+    for(var i=0; i<totalTodos; i++){
+    this.todos[i].completed =true;}
+          }
+        }
+      }
+      },
