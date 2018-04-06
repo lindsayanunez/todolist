@@ -28,7 +28,9 @@ deleteTodo: function(position){
 
 },
 //toggle complete
-toggleComplete: function(){
+toggleComplete: function(position){
+  var todo = this.todos[position];
+  todo.completed = !todo.completed;
 
 },
 
