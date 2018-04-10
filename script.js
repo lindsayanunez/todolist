@@ -91,9 +91,10 @@ var handlers = {
     todoList.toggleAll();
   },
   addTodo: function(){
-
-  }
-}
+    var addTodoInputText = document.getElementById('addTodoInputText');
+    todoList.addTodo(addTodoInputText.value);
+  },
+};
 
 
 
