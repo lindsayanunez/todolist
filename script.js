@@ -90,6 +90,9 @@ var handlers = {
   toggleAll: function(){
     todoList.toggleAll();
   },
+  addTodo: function(){
+
+  }
 }
 
 
