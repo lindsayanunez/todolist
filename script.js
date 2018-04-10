@@ -93,6 +93,7 @@ var handlers = {
   addTodo: function(){
     var addTodoInputText = document.getElementById('addTodoInputText');
     todoList.addTodo(addTodoInputText.value);
+    addTodoInputText.value = '';
   },
 };
 
